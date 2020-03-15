@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>OnlineCourseManagement</display-name>
+  <welcome-file-list>
+   <welcome-file>choose type.jsp</welcome-file>
+    <welcome-file>starting.jsp</welcome-file>
+    <welcome-file>login.jsp</welcome-file>
+   <welcome-file>added_course.jsp</welcome-file>
+    <welcome-file>student register.jsp</welcome-file>
+    <welcome-file>teacher register.jsp</welcome-file>
+    <welcome-file>adminhome.jsp</welcome-file>
+    <welcome-file>teacherhome.jsp</welcome-file>
+    <welcome-file>studenthome.jsp</welcome-file>
+    <welcome-file>course_details.jsp</welcome-file>
+    <welcome-file>taken_courses.jsp</welcome-file>
+    <welcome-file>show_students.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>TeacherRegister</servlet-name>
+    <servlet-class>web.cse.TregisterServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>MyStudent</servlet-name>
+    <servlet-class>web.cse.My_Students</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Course_Registration</servlet-name>
+    <servlet-class>web.cse.Course_Registration</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Course_Details</servlet-name>
+    <jsp-file>/course_details.jsp</jsp-file>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>StudentRegister</servlet-name>
+    <servlet-class>web.cse.SregisterServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>web.cse.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AdminHome</servlet-name>
+    <servlet-class>web.cse.AdminHome</servlet-class>
+  </servlet>
+    <servlet>
+    <servlet-name>Student</servlet-name>
+    <servlet-class>web.cse.My_Students</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TeacherRegister</servlet-name>
+    <url-pattern>/teacher register</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>StudentRegister</servlet-name>
+    <url-pattern>/student register</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminHome</servlet-name>
+    <url-pattern>/admin</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>Course_Registration</servlet-name>
+    <url-pattern>/take2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MyStudent</servlet-name>
+    <url-pattern>/show_student</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Student</servlet-name>
+    <url-pattern>/student</url-pattern>
+  </servlet-mapping>
+</web-app>
